@@ -5,7 +5,10 @@ class MyNavbar extends React.Component {
     return (
       <>
         <Navbar className="navbarbg">
-          <Navbar.Brand className="navbartext" href="#home">Music Chooser</Navbar.Brand>
+          <img className="imgnav" src="./logospo.png" alt="" />
+          <Navbar.Brand className="navbartext" href="#home">
+            Music Chooser
+          </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>

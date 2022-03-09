@@ -34,7 +34,7 @@ const Mainpage = () => {
             <Form.Group>
               <Form.Control
                 type="text"
-                placeholder="search"
+                placeholder="Enter song name,artist name"
                 value={query}
                 onChange={handleChange}
               />
@@ -44,7 +44,7 @@ const Mainpage = () => {
         <Col md={2}>
           <Button
             className="mt-5"
-            variant="outline-dark"
+            variant="outline-light"
             onClick={handleSubmit}
           >
             search
@@ -52,10 +52,11 @@ const Mainpage = () => {
         </Col>
         <Col md={12}>
           {songs.map((song) => (
-            <Card className="musicards" >
+            <Card className="musicards">
               <Card.Img variant="top" src={song.album.cover_small} />
               <Card.Body>
                 <Card.Title>{song.title}</Card.Title>
+                <a>{song.link}</a>
               </Card.Body>
             </Card>
           ))}

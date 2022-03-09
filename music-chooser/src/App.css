@@ -37,15 +37,30 @@
   }
 }
 .navbarbg{
-  background-color:rgb(17, 151, 24);
+  background-color:rgb(9, 10, 9);
   color:white!important;
 }
 .navbartext{
- 
-  color:white!important;
+ color:white!important;
+ margin-left :10px;
 }
 .musicards{
   width: 15rem;
   display: inline-flex;
   margin: 10px;
+  color:black;
 }
+.imgnav{
+  width:50px;
+  height:50px;
+}
+body{
+  background-color: #282c34;
+  color:white;
+}
+*{
+font-family: 'League Spartan', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+
