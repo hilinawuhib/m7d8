@@ -12,7 +12,7 @@ class MyNavbar extends React.Component {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-              <a href="#login">sign-in</a>
+              <a className="imgnav"href="#login">sign-in</a>
             </Navbar.Text>
           </Navbar.Collapse>
         </Navbar>

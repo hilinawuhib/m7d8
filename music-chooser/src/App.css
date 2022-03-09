@@ -48,7 +48,8 @@
   width: 15rem;
   display: inline-flex;
   margin: 10px;
-  color:black;
+  color:white;
+  background-color: darkgrey;
 }
 .imgnav{
   width:50px;
@@ -63,4 +64,6 @@ font-family: 'League Spartan', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 }
-
+.musictexts{
+  color:green;
+}

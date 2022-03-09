@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Card, Button, Container, Col, Row } from "react-bootstrap";
 import { Songs } from "./Types";
-import { useState, ChangeEvent, FormEvent, useEffect } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 
 const Mainpage = () => {
   const [songs, setSongs] = useState<Songs[]>([]);
@@ -53,10 +53,10 @@ const Mainpage = () => {
         <Col md={12}>
           {songs.map((song) => (
             <Card className="musicards">
-              <Card.Img variant="top" src={song.album.cover_small} />
+              <Card.Img variant="top" src={song.album.cover_big} />
               <Card.Body>
                 <Card.Title>{song.title}</Card.Title>
-                <a>{song.link}</a>
+                <a className="musictexts">{song.link}</a>
               </Card.Body>
             </Card>
           ))}
